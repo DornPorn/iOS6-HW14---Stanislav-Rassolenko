@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0342802852227E00E7873D /* AlbumCellAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03427F2852227E00E7873D /* AlbumCellAPI.swift */; };
 		3A311F052851CA5C007059EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F042851CA5C007059EF /* AppDelegate.swift */; };
-		3A311F072851CA5C007059EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F062851CA5C007059EF /* SceneDelegate.swift */; };
 		3A311F092851CA5C007059EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F082851CA5C007059EF /* ViewController.swift */; };
-		3A311F0C2851CA5C007059EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A311F0A2851CA5C007059EF /* Main.storyboard */; };
 		3A311F0E2851CA5E007059EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A311F0D2851CA5E007059EF /* Assets.xcassets */; };
 		3A311F112851CA5E007059EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A311F0F2851CA5E007059EF /* LaunchScreen.storyboard */; };
+		3A311F192851EC41007059EF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F182851EC41007059EF /* HeaderView.swift */; };
+		3A311F1B285202DC007059EF /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */; };
+		3A311F1E285203AE007059EF /* AlbumCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F1D285203AE007059EF /* AlbumCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A03427F2852227E00E7873D /* AlbumCellAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellAPI.swift; sourceTree = "<group>"; };
 		3A311F012851CA5C007059EF /* iOS6-HW14 - Stanislav Rassolenko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS6-HW14 - Stanislav Rassolenko.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A311F042851CA5C007059EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3A311F062851CA5C007059EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A311F082851CA5C007059EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A311F0B2851CA5C007059EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A311F0D2851CA5E007059EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A311F102851CA5E007059EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A311F122851CA5E007059EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A311F182851EC41007059EF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A311F1D285203AE007059EF /* AlbumCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		3A311F032851CA5C007059EF /* iOS6-HW14 - Stanislav Rassolenko */ = {
 			isa = PBXGroup;
 			children = (
+				3A311F1C2852039C007059EF /* Model */,
 				3A311F042851CA5C007059EF /* AppDelegate.swift */,
-				3A311F062851CA5C007059EF /* SceneDelegate.swift */,
 				3A311F082851CA5C007059EF /* ViewController.swift */,
-				3A311F0A2851CA5C007059EF /* Main.storyboard */,
 				3A311F0D2851CA5E007059EF /* Assets.xcassets */,
 				3A311F0F2851CA5E007059EF /* LaunchScreen.storyboard */,
 				3A311F122851CA5E007059EF /* Info.plist */,
+				3A311F182851EC41007059EF /* HeaderView.swift */,
+				3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */,
 			);
 			path = "iOS6-HW14 - Stanislav Rassolenko";
+			sourceTree = "<group>";
+		};
+		3A311F1C2852039C007059EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A311F1D285203AE007059EF /* AlbumCellModel.swift */,
+				3A03427F2852227E00E7873D /* AlbumCellAPI.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +141,6 @@
 			files = (
 				3A311F112851CA5E007059EF /* LaunchScreen.storyboard in Resources */,
 				3A311F0E2851CA5E007059EF /* Assets.xcassets in Resources */,
-				3A311F0C2851CA5C007059EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +151,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A311F1B285202DC007059EF /* AlbumCollectionViewCell.swift in Sources */,
 				3A311F092851CA5C007059EF /* ViewController.swift in Sources */,
+				3A0342802852227E00E7873D /* AlbumCellAPI.swift in Sources */,
+				3A311F192851EC41007059EF /* HeaderView.swift in Sources */,
+				3A311F1E285203AE007059EF /* AlbumCellModel.swift in Sources */,
 				3A311F052851CA5C007059EF /* AppDelegate.swift in Sources */,
-				3A311F072851CA5C007059EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3A311F0A2851CA5C007059EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A311F0B2851CA5C007059EF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3A311F0F2851CA5E007059EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +300,6 @@
 				INFOPLIST_FILE = "iOS6-HW14 - Stanislav Rassolenko/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +327,6 @@
 				INFOPLIST_FILE = "iOS6-HW14 - Stanislav Rassolenko/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
