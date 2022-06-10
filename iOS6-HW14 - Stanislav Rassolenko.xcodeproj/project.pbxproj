@@ -15,6 +15,7 @@
 		3A311F192851EC41007059EF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F182851EC41007059EF /* HeaderView.swift */; };
 		3A311F1B285202DC007059EF /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */; };
 		3A311F1E285203AE007059EF /* AlbumCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F1D285203AE007059EF /* AlbumCellModel.swift */; };
+		3AC2441F2852FA2100C05DDA /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2441E2852FA2100C05DDA /* CALayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3A311F182851EC41007059EF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A311F1D285203AE007059EF /* AlbumCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellModel.swift; sourceTree = "<group>"; };
+		3AC2441E2852FA2100C05DDA /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,14 @@
 		3A311F032851CA5C007059EF /* iOS6-HW14 - Stanislav Rassolenko */ = {
 			isa = PBXGroup;
 			children = (
+				3AC2441D2852FA0400C05DDA /* Extensions */,
 				3A311F1C2852039C007059EF /* Model */,
+				3AC2441A2852F9B800C05DDA /* View */,
+				3AC2441B2852F9C500C05DDA /* Controller */,
 				3A311F042851CA5C007059EF /* AppDelegate.swift */,
-				3A311F082851CA5C007059EF /* ViewController.swift */,
 				3A311F0D2851CA5E007059EF /* Assets.xcassets */,
 				3A311F0F2851CA5E007059EF /* LaunchScreen.storyboard */,
 				3A311F122851CA5E007059EF /* Info.plist */,
-				3A311F182851EC41007059EF /* HeaderView.swift */,
-				3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */,
 			);
 			path = "iOS6-HW14 - Stanislav Rassolenko";
 			sourceTree = "<group>";
@@ -79,6 +81,39 @@
 				3A03427F2852227E00E7873D /* AlbumCellAPI.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3AC2441A2852F9B800C05DDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AC2441C2852F9DE00C05DDA /* Cells */,
+				3A311F182851EC41007059EF /* HeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AC2441B2852F9C500C05DDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A311F082851CA5C007059EF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3AC2441C2852F9DE00C05DDA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3AC2441D2852FA0400C05DDA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AC2441E2852FA2100C05DDA /* CALayer.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +190,7 @@
 				3A311F092851CA5C007059EF /* ViewController.swift in Sources */,
 				3A0342802852227E00E7873D /* AlbumCellAPI.swift in Sources */,
 				3A311F192851EC41007059EF /* HeaderView.swift in Sources */,
+				3AC2441F2852FA2100C05DDA /* CALayer.swift in Sources */,
 				3A311F1E285203AE007059EF /* AlbumCellModel.swift in Sources */,
 				3A311F052851CA5C007059EF /* AppDelegate.swift in Sources */,
 			);
