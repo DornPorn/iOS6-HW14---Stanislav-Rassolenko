@@ -15,7 +15,12 @@
 		3A311F192851EC41007059EF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F182851EC41007059EF /* HeaderView.swift */; };
 		3A311F1B285202DC007059EF /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */; };
 		3A311F1E285203AE007059EF /* AlbumCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A311F1D285203AE007059EF /* AlbumCellModel.swift */; };
+		3A78E68928535B2800358066 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78E68828535B2800358066 /* CollectionViewLayout.swift */; };
+		3A78E68E2853670D00358066 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A78E68D2853670D00358066 /* Constants.swift */; };
 		3AC2441F2852FA2100C05DDA /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2441E2852FA2100C05DDA /* CALayer.swift */; };
+		3AC2442128531A6400C05DDA /* ListCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2442028531A6400C05DDA /* ListCellModel.swift */; };
+		3AC2442328531A8500C05DDA /* ListCellAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2442228531A8500C05DDA /* ListCellAPI.swift */; };
+		3AC2442528531D5A00C05DDA /* ListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC2442428531D5A00C05DDA /* ListCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +34,12 @@
 		3A311F182851EC41007059EF /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		3A311F1D285203AE007059EF /* AlbumCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellModel.swift; sourceTree = "<group>"; };
+		3A78E68828535B2800358066 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
+		3A78E68D2853670D00358066 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3AC2441E2852FA2100C05DDA /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		3AC2442028531A6400C05DDA /* ListCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellModel.swift; sourceTree = "<group>"; };
+		3AC2442228531A8500C05DDA /* ListCellAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellAPI.swift; sourceTree = "<group>"; };
+		3AC2442428531D5A00C05DDA /* ListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,17 +87,52 @@
 		3A311F1C2852039C007059EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3A311F1D285203AE007059EF /* AlbumCellModel.swift */,
-				3A03427F2852227E00E7873D /* AlbumCellAPI.swift */,
+				3A78E68C285366F400358066 /* List cell */,
+				3A78E68B285366E500358066 /* Album cell */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3A78E68728535B1100358066 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				3A78E68828535B2800358066 /* CollectionViewLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		3A78E68A285366D400358066 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A311F182851EC41007059EF /* HeaderView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3A78E68B285366E500358066 /* Album cell */ = {
+			isa = PBXGroup;
+			children = (
+				3A03427F2852227E00E7873D /* AlbumCellAPI.swift */,
+				3A311F1D285203AE007059EF /* AlbumCellModel.swift */,
+			);
+			path = "Album cell";
+			sourceTree = "<group>";
+		};
+		3A78E68C285366F400358066 /* List cell */ = {
+			isa = PBXGroup;
+			children = (
+				3AC2442228531A8500C05DDA /* ListCellAPI.swift */,
+				3AC2442028531A6400C05DDA /* ListCellModel.swift */,
+			);
+			path = "List cell";
 			sourceTree = "<group>";
 		};
 		3AC2441A2852F9B800C05DDA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3A78E68A285366D400358066 /* CustomViews */,
+				3A78E68728535B1100358066 /* Layout */,
 				3AC2441C2852F9DE00C05DDA /* Cells */,
-				3A311F182851EC41007059EF /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				3A311F1A285202DC007059EF /* AlbumCollectionViewCell.swift */,
+				3AC2442428531D5A00C05DDA /* ListCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -112,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				3AC2441E2852FA2100C05DDA /* CALayer.swift */,
+				3A78E68D2853670D00358066 /* Constants.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,10 +236,15 @@
 				3A311F1B285202DC007059EF /* AlbumCollectionViewCell.swift in Sources */,
 				3A311F092851CA5C007059EF /* ViewController.swift in Sources */,
 				3A0342802852227E00E7873D /* AlbumCellAPI.swift in Sources */,
+				3AC2442128531A6400C05DDA /* ListCellModel.swift in Sources */,
 				3A311F192851EC41007059EF /* HeaderView.swift in Sources */,
+				3AC2442328531A8500C05DDA /* ListCellAPI.swift in Sources */,
+				3A78E68928535B2800358066 /* CollectionViewLayout.swift in Sources */,
+				3AC2442528531D5A00C05DDA /* ListCollectionViewCell.swift in Sources */,
 				3AC2441F2852FA2100C05DDA /* CALayer.swift in Sources */,
 				3A311F1E285203AE007059EF /* AlbumCellModel.swift in Sources */,
 				3A311F052851CA5C007059EF /* AppDelegate.swift in Sources */,
+				3A78E68E2853670D00358066 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

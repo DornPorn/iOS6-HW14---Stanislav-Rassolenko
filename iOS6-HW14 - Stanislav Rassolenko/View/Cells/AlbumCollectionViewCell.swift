@@ -11,7 +11,7 @@ class AlbumCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Cell ID
     
-    static let identifier = "albumCellId"
+    static let identifier = Strings.albumCellIdentifier
     
     // MARK: - Initialization
     
@@ -39,7 +39,7 @@ class AlbumCollectionViewCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 5
+        imageView.layer.cornerRadius = Metric.cellImageCornerRadius
         return imageView
     }()
     
@@ -59,7 +59,7 @@ class AlbumCollectionViewCell: UICollectionViewCell {
     private lazy var heartImg: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(systemName: "heart.fill")
+        imageView.image = UIImage(systemName: Strings.heartImageName)
         imageView.tintColor = .white
         imageView.isHidden = true
         return imageView
@@ -80,14 +80,14 @@ class AlbumCollectionViewCell: UICollectionViewCell {
                                     cellImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
                                     cellImage.heightAnchor.constraint(equalTo: contentView.widthAnchor),
                                     
-                                    cellTitle.topAnchor.constraint(equalTo: cellImage.bottomAnchor, constant: 2),
+                                     cellTitle.topAnchor.constraint(equalTo: cellImage.bottomAnchor, constant: Metric.cellContentInset),
                                      cellTitle.leadingAnchor.constraint(equalTo: cellImage.leadingAnchor),
                                     
-                                     cellPhotosCount.topAnchor.constraint(equalTo: cellTitle.bottomAnchor, constant: 2),
+                                     cellPhotosCount.topAnchor.constraint(equalTo: cellTitle.bottomAnchor, constant: Metric.cellContentInset),
                                      cellPhotosCount.leadingAnchor.constraint(equalTo: cellTitle.leadingAnchor),
                                      
-                                     heartImg.leadingAnchor.constraint(equalTo: cellImage.leadingAnchor, constant: 2),
-                                     heartImg.bottomAnchor.constraint(equalTo: cellImage.bottomAnchor, constant: -2)
+                                     heartImg.leadingAnchor.constraint(equalTo: cellImage.leadingAnchor, constant: Metric.cellContentInset),
+                                     heartImg.bottomAnchor.constraint(equalTo: cellImage.bottomAnchor, constant: -Metric.cellContentInset)
                                     ]
                                     
         )
@@ -99,3 +99,5 @@ class AlbumCollectionViewCell: UICollectionViewCell {
         cellPhotosCount.text = model.numberOfPhotos
     }
 }
+
+
