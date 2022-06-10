@@ -45,6 +45,18 @@ class AlbumCellAPI {
                      numberOfPhotos: "127"),
             AlbumCellModel(imageName: "uni",
                      albumName: "Uni",
-                     numberOfPhotos: "38")]]
+                     numberOfPhotos: "38"),
+             AlbumCellModel(imageName: "whatsapp",
+                       albumName: "WhatsApp",
+                       numberOfPhotos: "229"),
+             AlbumCellModel(imageName: "instagram",
+                      albumName: "Instagram",
+                      numberOfPhotos: "22"),
+             AlbumCellModel(imageName: "scb",
+                      albumName: "SCB",
+                      numberOfPhotos: "127"),
+             AlbumCellModel(imageName: "uni",
+                      albumName: "Uni",
+                      numberOfPhotos: "38")]]
     }
 }
